@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Login cadastro de funcionário</title>
+	<title>Login cadastro de funcionários</title>
 </head>
 <body>
 	<div class="container">
