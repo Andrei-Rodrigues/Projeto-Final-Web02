@@ -9,6 +9,7 @@ $manager = new Gerenciador();
 session_start();
 
 ?>
+<!-- teste -->
 
 <!DOCTYPE html>
 <html>
