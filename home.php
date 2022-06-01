@@ -19,7 +19,7 @@ session_start();
 <div class="container">
 
     <h2 class="text-center">
-    <i>Lista de funcionárioss</i>
+    <i>Lista de funcionários</i>
     </h2>
 
     <h5 class="text-left">
