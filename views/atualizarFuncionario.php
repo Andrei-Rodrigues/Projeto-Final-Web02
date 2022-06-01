@@ -8,13 +8,13 @@ $m = new Gerenciador();
 $id = $_POST['id'];
 ?>
 
-<body style="background-color: #4682b4">
+<body>
 <h2 class="text-center">
 <i>Alterar informação</i>
 </h2>
 
 <form method="post" action="../controller/update_costumer.php">
-    <div class="container">
+    <div class="container" style="box-shadow: 0 0 5px rgba(0,0,0,.3);">
         <div class="form-row">
 
             <?php foreach ($m->getInfo('clientes', $id) as $c):?>
@@ -45,12 +45,12 @@ $id = $_POST['id'];
             <input type="hidden" name="id" value="<?= $c['id']?>">
             <?php endforeach;?>
             <div class="col-md-4">
-                <a href="../index.php" style="color: #000000">
+                <button href="../index.php" class="btn btn box-shadow: 0 0 5px rgba(0,0,0,.3);" style="color: #000000; margin-bottom: 5px;">
                     <i>Voltar</i>
-                </a>
+                </button>
             </div>
             <div class="col-md-6 text-right">
-                <button>
+                <button class="btn btn box-shadow: 0 0 5px rgba(0,0,0,.3);">
                     <i>Alterar</i>
                 </button>
             </div>

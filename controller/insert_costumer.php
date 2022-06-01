@@ -1,6 +1,6 @@
 <?php
-include_once '../model/Conexao.php';
-include_once '../model/Manager.php';
+include_once '../model/conexao.php';
+include_once '../model/gerenciador.php';
 
 $manager = new Gerenciador();
 

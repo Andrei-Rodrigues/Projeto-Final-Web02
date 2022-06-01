@@ -1,6 +1,6 @@
 <?php include_once '../model/dependencias.php'?>
 
-<body style="background-color: #4682b4">
+<body>
 <h2 class="text-center">
 <i>Cadastrar funcionário</i>
 </h2>
@@ -21,7 +21,7 @@
                 <input class="form-control" type="text" name="cpf" required id="cpf">
             </div>
             <div class="col-md-3">
-                <i>Dt. de Nascimento:</i>
+                <i>Data de Nascimento:</i>
                 <input class="form-control" type="date" name="dtnascimento" required>
             </div>
             <div class="col-md-4">
@@ -32,17 +32,13 @@
                 <i>Endereço:</i>
                 <input class="form-control" type="text" name="Endereco" required><br>
             </div>
-            <div class="col-md-10">
-                <i>cep</i>
-                <input class="form-control" type="text" name="cep" required><br>
-            </div>
             <div class="col-md-4">
                 <a href="../index.php" style="color: #000000">
                     <i>Voltar</i>
                 </a>
             </div>
             <div class="col-md-6 text-right">
-                <button>
+                <button class="btn">
                 <i>Cadastrar funcionário</i>
                 </button>
             </div>

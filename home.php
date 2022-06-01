@@ -15,7 +15,7 @@ session_start();
 <head>
     
 </head>
-<body style="background-color: #4682b4">
+<body>
 <div class="container">
 
     <h2 class="text-center">
@@ -24,11 +24,11 @@ session_start();
 
     <h5 class="text-left">
         <a href="views/registrarFuncionario.php">
-            <i style="color: #000000">Registrar funcionário</i>
+            <i class="btn" style="color: #000000; box-shadow: 0 0 5px rgba(0,0,0,.3);">Registrar funcionário</i>
         </a>
     </h5>
 
-    <div class="table-responsive">
+    <div class="table-responsive" style="box-shadow: 0 0 5px rgba(0,0,0,.3);">
         <table class="table table-hover" style="background-color: #ffffff">
             <thead class="p-3 mb-2 bg-secondary text-white">
                 <tr>
@@ -38,7 +38,6 @@ session_start();
                     <th>CPF</th>
                     <th>Telefone</th>
                     <th>Endereço</th>
-                    <th>cep</th>
                     <th colspan="3">Alterar/Deletar</th>
                 </tr>
             </thead>
@@ -51,11 +50,10 @@ session_start();
                     <td><?= $c['cpf']; ?></td>
                     <td><?= $c['Telefone']; ?></td>
                     <td><?= $c['Endereco']; ?></td>
-                    <td><?= $c['cep']; ?></td>
                     <td>
                         <form method="POST" action="views/atualizarFuncionario.php">
                             <input type="hidden" name="id" value="<?= $c['id']?>">
-                            <button>
+                            <button class="btn">
                                 <i class="fa fa-user-edit"></i>
                             </button>
                         </form>
@@ -63,7 +61,7 @@ session_start();
                     <td>
                         <form method="POST" action="controller/delete_costumer.php" onclick="return confirm('Você realmente deseja deletar esse cadastro?')">
                             <input type="hidden" name="id" value="<?= $c['id']?>">
-                            <button>
+                            <button class="btn">
                                 <i class="fa fa-trash"></i>
                             </button>
                         </form>
@@ -74,6 +72,6 @@ session_start();
         </table>
     </div>
 </div>
-    <a href="logout.php" class="btn" style="margin-left: 10px; width: 100px; margin-top: 20px; background-color: #000000">Sair</a>
+    <a href="logout.php" class="btn" style="margin-left: 10px; width: 100px; margin-top: 20px; box-shadow: 0 0 5px rgba(0,0,0,.3); color:#000000">Sair</a>
 </body>
 </html>
